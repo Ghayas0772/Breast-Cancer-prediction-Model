@@ -1,8 +1,8 @@
-Breast Cancer Wisconsin Dataset Analysis
+# Breast Cancer Wisconsin Dataset Analysis
 
 This project focuses on exploratory data analysis (EDA), data cleaning, and preprocessing for the Breast Cancer Wisconsin dataset. The dataset contains 699 observations and 11 features, including a target column (Class) that indicates whether a tumor is benign or malignant.
 
-1. Data Loading & Inspection
+### 1. Data Loading & Inspection
 
 ```import pandas as pd
 import numpy as np
@@ -19,7 +19,7 @@ print(data.head())
 print(data.info())```
 
 
-Handling Missing Values in Bare_Nuclei
+### Handling Missing Values in Bare_Nuclei
 
 ```# Convert Bare_Nuclei to numeric; '?' becomes NaN
 data['Bare_Nuclei'] = pd.to_numeric(data['Bare_Nuclei'], errors='coerce')
@@ -28,7 +28,7 @@ data['Bare_Nuclei'] = pd.to_numeric(data['Bare_Nuclei'], errors='coerce')
 data['Bare_Nuclei'].fillna(data['Bare_Nuclei'].median(), inplace=True)``
 
 
-2. Target Variable Exploration
+### 2. Target Variable Exploration
 
 ```# Map target classes to 0 (Benign) and 1 (Malignant)
 data['Class'] = data['Class'].map({2: 0, 4: 1})
@@ -38,17 +38,17 @@ print(data['Class'].value_counts())
 print(data['Class'].value_counts(normalize=True))```
 
 
-Key findings:
+### Key findings:
 
-0 → Benign
+*** 0 → Benign *** 
 
-1 → Malignant
+### 1 → Malignant
 
 The dataset has a slight class imbalance (~65% benign vs 35% malignant).
 
-3. Feature Engineering & Preprocessing
+### 3. Feature Engineering & Preprocessing
 
-3.1 Separate Features & Target
+#### 3.1 Separate Features & Target
 ```
 X = data.drop(["ID", "Class"], axis=1)
 y = data["Class"]
