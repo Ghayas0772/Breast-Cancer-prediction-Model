@@ -5,8 +5,8 @@ This project focuses on **exploratory data analysis (EDA)**, **data cleaning**, 
 ---
 
 ## 1. Data Loading & Inspection
-(
-```python
+
+(```python
 import pandas as pd
 import numpy as np
 
