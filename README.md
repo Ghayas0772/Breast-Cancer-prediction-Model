@@ -6,7 +6,7 @@ This project focuses on **exploratory data analysis (EDA)**, **data cleaning**, 
 
 ## 1. Data Loading & Inspection
 
-(```python
+```python
 import pandas as pd
 import numpy as np
 
@@ -19,5 +19,6 @@ data = pd.read_csv(path, names=columns, sep=',')
 
 # Check first rows
 print(data.head())
-print(data.info())''')
-### Handling Missing Values in Bare_Nuclei
+print(data.info())'''
+           
+           ### Handling Missing Values in Bare_Nuclei
