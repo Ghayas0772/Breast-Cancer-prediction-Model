@@ -1,5 +1,3 @@
-Perfect! I’ll convert your entire Breast Cancer EDA / preprocessing content into a GitHub-ready Markdown format with proper headings, text, and Python code blocks so nothing turns into plain text unintentionally. Here’s the full version ready to paste into your README.md:
-
 # Breast Cancer Wisconsin Dataset Analysis
 
 This project focuses on **exploratory data analysis (EDA)**, **data cleaning**, and **preprocessing** for the Breast Cancer Wisconsin dataset. The dataset contains 699 observations and 11 features, including a target column (`Class`) that indicates whether a tumor is benign or malignant.
