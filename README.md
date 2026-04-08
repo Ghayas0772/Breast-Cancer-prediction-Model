@@ -20,3 +20,5 @@ data = pd.read_csv(path, names=columns, sep=',')
 # Check first rows
 print(data.head())
 print(data.info())
+
+<!--  Handling Missing Values in Bare_Nuclei   >
